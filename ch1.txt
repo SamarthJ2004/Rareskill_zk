@@ -1,0 +1,14 @@
+Problems in P: problems that can be solved and verified in polynomial time
+Witness: proof that you solved the problem correctly
+Problems in PSPACE: problems that require exponential resources to solve and verify but don’t require exponential space
+Problems in NP: problems that can be verified in polynomial time
+ZK proofs are not usable for problems that can not be verified in polynomial time
+All NP problems can be verified by modelling them to boolean circuits
+NP: non-deterministic polynomial
+
+P < NP < PSPACE
+
+In ZK the "knowledge" referes to the knowledge of the witness, it seeks to demonstrate that you know the witness ( solution to the boolean circuit) without revealing it.
+
+
+
