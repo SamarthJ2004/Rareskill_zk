@@ -1,0 +1,107 @@
+Any solution to a problem in P or NP can be verified by modeling the problem as a Boolean circuit.
+The witness ( the values of the boolean variables) that returns in the Boolean circuit returing true
+
+Variables in Arithmetic Circuit are called signals
+
+
+Boolean Circuit                   Arithmetic Circuit
+Variables are 0, 1                Signals hold numbers
+Only operations are AND, OR, NOT  Only operations are addition and multiplication
+Satisfied when the output is true Satisfied when the left hand side equals the right hand side for all equations (there is no output)
+Witness is an assignment to the 
+Boolean variables that satisfies 
+the Boolean circuit               Witness is an assignment to the signals that satisfies all the equality constraints
+
+
+Arithmetic Circuits have less number of variables
+
+
+- Computing >=
+- Map colouring Problem
+
+every boolean circuit can be modelled as an arithmetic circuit and vice-versa
+
+Practise Problems:
+
+1) 
+xi(1-xi) == 0
+x1 * x2 * .. * xn  == 0
+2)
+xi(1-xi) == 0
+x1 * x2 * .. * xn  - 1== 0
+3) for every state: x(x-1) == 0
+   for every neighbouring state: x * (1-y) + (1-x) * y == 1
+4) let k be of n-1 bits i.e. x ,y and z are also of n-1 bits
+
+now for 2^(n-1) + delta, if the MSB = 1 => delta >= 0 else delta < 0
+
+(k-x)(k-y)(k-x) == 0 // so that k is either of x,y,z
+
+2^n kn + ... + k0 == k
+2^n yn + ... + y0 == y
+2^n xn + ... + x0 == x
+2^n zn + ... + z0 == z
+
+for all ki , yi, xi, zi:
+
+a(a-1) == 0
+
+2^(n-1) + (k - x) == 2^(n-1) cn + ... + c0
+ci(ci-1) == 0
+
+2^(n-1) + (k - y) == 2^(n-1) dn + ... + d0
+di(di-1) == 0
+
+2^(n-1) + (k - z) == 2^(n-1) bn + ... + b0
+bi(bi-1) == 0
+
+bn * cn * dn == 1
+
+5) xi(1-xi) == 0
+
+out == 1 - (1-x1) * (1-x2) * .. * (1-xn)
+
+6) let there be n bit number
+
+v == 2^(n-1) cn + ... + c0
+
+ci(ci-1) == 0
+
+now only 1 of ci can be 1
+
+c0+ c1 + ... +cn ==1
+
+7) let si be the selection bits for the given set
+si(1-si) == 0
+
+for the set say ai
+
+sum(ai * si) = T
+
+8) --------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
