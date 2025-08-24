@@ -1,0 +1,33 @@
+Finite Fields: the set of integers {0,1,2,...,p-1} where p is a prime
+any number outside the set is mapped to a congruent (equivalent) element in the set
+
+Modulo Arithmetic:
+
+additive inverse
+- 0 its own
+- every number has exactly one
+- they occur pairwise (expect for 0)
+
+multiplicative inverse
+- 0 has none
+- 1 is its own
+- each number has exactly one (except 0)
+- p-1 is inverse of itself
+
+Fermat Little Thm: a^p = a (mod p)
+=> a^(p-2) is the multiplicative inverse of a
+
+In finite fields there is no notion of even or odd
+Division by 2 mean : multiplying by the inverse of 2 which always yields results
+
+Finite field operations are associative, commutative, distributive
+
+Square Roots: the 2 roots are the additive inverse and the number need not be perfect square
+
+System of Linear Equations: The equations in regular maths and modular maths behave differently
+
+
+Practise Problems:
+1) let x = 0, and y = -z
+2) the 2 roots are 2 and -4
+ -4 == p -4

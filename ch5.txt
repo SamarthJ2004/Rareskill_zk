@@ -1,0 +1,34 @@
+Abstract Algebra
+
+A Group is a set with a binary operator that is closed, associative, has an identity element, and where each element has an inverse.
+
+Magma: A set with a closed binary operator
+An algebraic structure is a set with a collection of operations on that set.
+Semi group : is a Magma where the binary operator is associative
+Monoid: is a semi group which has an identity element
+
+ex1:
+min(a,b) over integer is magma and semigroup but not a monoid ( since largest integer does not exists)
+if +ve integers only (still not a monoid)
+
+max(a,b) is a magma and semigroup but not a monoid over intergers
+but is a monoid over +ve integers due to 0
+
+ex2: all are magma
+and, or, xor, xnor are monoid
+but nand and nor are magma only
+
+Group : is a monoid in which each element has an inverse
+for all a belonging to A , there exists a a' belonging to A such that a x a' = i
+where x is the operator and i is identity
+
+1) strings under concatenation are not a group becuase they dont satisfy the associative property
+2) a +b = c belonging to polynomial
+a+ b =b+a
+a + 0 = a
+a+ (-a) = 0
+
+Abelian : binary operator is commutative , technically group(not the binary operator) is abelian
+
+Groups < Monoid < Semi Group < Magma < sets
+
