@@ -1,0 +1,45 @@
+Elliptic Curve Point Addition
+
+y^2= x^3 + ax + b
+
+==>>  Elliptic Curves form an abelian group under addition
+
+The identity element : is the point nowhere ( the point at infinity)
+If a line intersects are 2 points , it will also intersect at a third point on the elliptic curve
+So, the identity is infinity and the inverse if (x,y) is (x,-y) , the line passing through these 2 is a verticle line
+
+It is an abelian group due to the property that there are exactly three or 1 points of intersection, so A (op) B = B (op) A
+
+The point addition on elliptic curves is defined to be the third point flipped over the x axis i.e (x3, -y3)
+(x1,y1) (op) (x2,y2) = (x3, -y3)
+
+Formula for Addition:
+
+for P1 = (x1, y1) and P2 = (x2, y2)
+for P1 (op) P2 : the point addition
+
+slope m = y2-y2/x2-x1
+
+y = mx +c
+y^2 = x^3 +ax +b
+
+(mx+c) ^2 = x^3 + ax + b;
+
+this is a cubic with the roots x1, x2, x3
+
+x1 + x2 + x3 = m^2  (sum of roots = -b/a)
+so , 
+
+==================================
+
+x3 = m^2 - x1 - x2
+y3 = m(x3 - x1) - y1
+
+==================================
+
+Point Multiplication : adding to itself A (op) A
+take the derivative at that point, get the intersection and flip the point about x axis
+
+multiplication is just repetitive addition
+
+

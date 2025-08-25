@@ -1,0 +1,19 @@
+Homomorphims
+
+for 2 algebraic ds (A,:) and (B,;)
+
+if there exists a function f : A -> B
+
+f(a : b) = f(a);f(b) , where : and ; are the binary operators for A and B
+
+Exercise:
+
+1) take the function as a f(x) = x
+2) take the value at a fixed point
+3) f(x) = logx
+
+Homomorphic Encryption
+if the function f is computationally difficult to invert, then f homomorphically encrypts the elements of A
+
+homomorphism is one directional
+isomorphism is both ways
