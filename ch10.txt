@@ -1,0 +1,26 @@
+Bilinear Pairings
+
+--Discrete logarithm in modular arithmetic
+
+If g^a === h (mod p) , then a = log g (h) is called the discrete log of h to the base g.
+
+Unlike normal logs, this is very hard to compute efficiently (hence cryptographically useful).
+=========================================
+
+f(aG,bG)=f(abG,G)=f(G,abG) : symmetric
+f(aG1,bG2)=f(abG1,G2)=f(G1,abG2) : asymmetric
+
+G2 and field extension
+- field extension: elliptic curve points with more than 2 dimensions
+- e(3G1, 2G2) === b^(3*2) = b^6
+
+EIP 197 precompile
+the precompile doesn’t compute discrete logs. It computes pairings on each input pair, multiplies the results in the target group, and checks whether the product equals the identity (1). By bilinearity that product equals : e(G1,G2)^(summation (ai * bi)) which is 1 only when summation (ai * bi) = 0
+
+the inverse is the negative
+e(A1,B2) = e(α1,β2)+e(L,γ2)+e(C1,δ2)
+
+multiplying both sides by e(A1, B2)^-1  and writing it as e(-A1,B2)
+
+The group GT is e:G1 × G2 → GT.
+The sum of pairings is zero if and only if the sum of the products of the discrete logarithms is zero.

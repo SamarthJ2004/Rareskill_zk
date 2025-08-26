@@ -1,0 +1,20 @@
+Rank 1 constraint system
+
+A Rank 1 Constraint System (R1CS) is an arithmetic circuit with the requirement that each equality constraint has one multiplication (and no restriction on the number of additions).
+
+In a Rank 1 Constraint System the witness vector is a 1 X n vector that contains the value of all the input variables, the output variable, and the intermediate values,with the first one set to 1
+1 equation: 1 multiplication
+
+result = left_hand_side × right_hand_side
+
+System of equation of form : Oa = La * Ra (divide the given equation to multiple steps such that each has only one multiplication)
+where O, L, R are matrix of size n * m
+
+a is the witness vector
+the number of rows: the number of constrains
+the number of columns: the number of elements in the witness vector
+
+Quadratic Arithmetic Programs
+
+Addition is free i.e. we don't have to create any extra constaint for it
+
