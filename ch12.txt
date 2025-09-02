@@ -1,0 +1,25 @@
+Lagrange interpolation is used to get the lowest degree polynomial passing from a set of points
+
+Schwartz-Zippel Lemma:
+if we were given 2 polynomials P(x) and G(x) , width degrees dp and dq, and if P != Q, then the number of points where these intersect i <= max(dp, dq)
+
+We can test that two polynomials are equal by checking if all their coefficients are equal, but this takes O(d) time, where d is the degree of the polynomial.
+
+If instead we can evaluate the polynomials at a random point u and compare the evaluations in O(1) time.
+
+That is, in a finite field Fp, we pick a random value u from [0,p) . Then we evaluate f(u) and g(u). If they are equal, then one of two things must be true:
+1) f(x) = g(x)
+2) f(x) != g(x), but they intersect at that point
+
+if degree << p,then situation 2 is very unlikly
+
+QAP (quadratic arithmetic polynomial) : O(1) test for equality
+R1CS: O(n)
+
+QAP formula: summation(ai * ui) * summation(ai * vi) = summation(ai * wi) + h(x)*t(x)
+
+
+R1CS to QAP steps:
+1) divide the equation to multiple steps with each step having 1 multiplication
+2) turn to R1CS
+3) get the column wise polynomials for all 3 matrix

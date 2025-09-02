@@ -1,0 +1,12 @@
+Trusted Setup:
+A trusted setup is a mechanism ZK-SNARKs use to evaluate a polynomial at a secret value.
+
+Each setup created has a secret used to create the setup (using bilinear pairing) , and so if atleast one of the creator destroys their secret , the setup is tamper proof
+
+=======================
+
+Groth16
+
+The Groth16 algorithm enables a quadratic arithmetic program to be computed by a prover over elliptic curve points derived in a trusted setup, and quickly checked by a verifier.
+
+
