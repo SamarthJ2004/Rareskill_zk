@@ -1,3 +1,3 @@
-./circom_code/*_js
+./circom_code/*_js/
 ./circom_code/*.sym
 ./circom_code/*.r1cs
